@@ -6,8 +6,9 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
   background:#000000;
-  /* background: #181818; */
-  position:relative; left:-60px
+  width: 100%;
+  background: #181818;
+  /* position:relative; left:-60px */
 }
 
 a {
@@ -23,6 +24,69 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   /* font-family: "Raleway", sans-serif; */
   font-family: "New Century Schoolbook";
+}
+
+.aboutMeButon a{
+  border:#e7f691;
+  color: hsl(69, 85%, 77%);
+  background-color: rgba(14, 103, 205, 0);
+
+}
+.aboutMeButon{
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0.5em;
+  
+}
+
+
+button:hover a{
+  color: white;
+}
+
+ button:hover{
+  background: rgb(1, 1, 18);
+  
+}
+
+
+.typewriter h1 {
+  color: #fff;
+  /* font-family: monospace; */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(141, 145, 221); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+.typewriter h3 {
+  color: #fff;
+  /* font-family: monospace; */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(141, 145, 221); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(209, 234, 21) }
 }
 
 /*--------------------------------------------------------------
@@ -47,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main {
-  margin-left: 300px;
+  margin-left: 200px;
 }
 
 @media (max-width: 1199px) {
@@ -101,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
 #contact1 .social-links{
   position: fixed;
   opacity: 1;
-  right: 15px;
+  right: 16px;
   bottom: 15px;
   top: 0;
   right:0;
@@ -138,7 +202,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   position:relative;
   height: 100vh;
-  left: 60px;
+  /* left: 60px; */
   background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
 }
@@ -208,7 +272,7 @@ section {
   display: block;
   text-align: center;
   width: 20%;
-  height: 7px;
+  height: 1px;
   background: #48937e;
   bottom: 0;
   left: 40%;
@@ -221,7 +285,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about{
-  background: black;
+  background: rgb(1, 13, 30);
 }
 .about .section-title h3{
   text-align: center;
@@ -241,7 +305,7 @@ section {
   width: 220px;
   padding: 3px;
   /* border: 8px solid #999999; */
-  background-color: #48937e;
+  /* background-color: #48937e; */
 }
 .about .content h3 {
   font-weight: 700;
@@ -256,15 +320,14 @@ section {
 }
 .about .section-title p {
   color: #F8F8F8;
-  opacity:0.75;
+  /* opacity:0.75; */
 }
 .about .content ul {
   list-style: none;
   padding: 0px;
   color:#F8F8F8
-
-  opacity:0.75;
 }
+
 .about .content ul li {
   margin-bottom: 20px;
   display: flex;
@@ -284,6 +347,9 @@ section {
   opacity:0.75;
 }
 
+.Education{
+  background-color:white;
+}
 
 
 /*--------------------------------------------------------------
@@ -357,6 +423,41 @@ section {
   transition: all ease-in-out 0.1s;
   z-index: 2;
   opacity: 0;
+}
+
+
+.portfolio .image_description_div .portfolio-links {
+  opacity: 1;
+  left: 0;
+  right: 0;
+  bottom: -60px;
+  z-index: 3;
+  position: absolute;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio .image_description_div .portfolio-links a {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  background: rgba(27,77,62,0.75);
+  transition: 0.3s;
+  width: 50%;
+}
+.portfolio .image_description_div .portfolio-links p {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  position: sticky;
+  background: rgba(27,77,62,0.75);
+  transition: 0.3s;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 1000px;
 }
 
 /* edit two icons on bottom of picture */
@@ -480,8 +581,18 @@ section {
   background:#000000;
 }
 
+.icon-link{
+  margin-top: 20px;
+  /* background:rgba(205, 203, 227, 0.39); */
+}
 
-
+.icon-link a{
+ /* background: rgb(0, 0, 0); */
+ border: black 2px;
+ background:rgba(255, 255, 255, 0.507);
+ font-size: 30px;
+ padding: 3px; 
+}
 /*--------------------------------------------------------------
 # Art Portfolio
 --------------------------------------------------------------*/

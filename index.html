@@ -34,12 +34,13 @@
         <ul>
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user-circle"></i> <span>About</span></a></li>
-          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Skills</span></a></li>
+          <!-- <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Skills</span></a></li> -->
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-collection"></i> <span>Portfolio</span></a></li>
-          <li><a href="#art-portfolio" class="nav-link scrollto"><i class="bx bx-box"></i> <span>Art Portfolio</span></a></li>
+          <li><a href="#art-portfolio" class="nav-link scrollto"><i class="bx bx-box"></i> <span>Art</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
+      <!-- .nav-menu -->
       <div id = "contact1" class="profile">
         <div class="social-links mt-3 text-center">
           <a href="https://github.com/imaik129" target="_blank" class="github"><i class="bx bxl-github"></i></a>
@@ -55,10 +56,15 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
-
+      <p style = "font-family: 'Lucida Console', 'Courier New', monospace; ">Hi, my name is </p>
       <h1>Kyosuke Imai</h1>
-      <h3> Welcome to my Website</h3>
-
+      
+      <div class="typewriter" >
+        <h3> Welcome to my Website</h3>
+      </div>
+      <div class = "FirstButtonDiv"> 
+        <button class = "aboutMeButon"><a href="#about" ><span>About Me</span></a></button>
+      </div>  
     </div>
   </section><!-- End Hero -->
 
@@ -70,30 +76,43 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <h3>Let me introduce myself.</h3>
-          <p class="fst-italic">
-            I am a Senior CS and Studio Arts Double Major at Carleton College, and I am actively exploring the intersection of art and technology. I am particularly interested in Full-stack development, front-end development, data visualization, UI/UX design, graphic design and anything related to developing a product!
-          </p>
+
+          <h3 style = "font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight:lighter">Let me introduce myself.</h3>
+          <h4 class = "text-center text-white" style = "font-family: Calibril; font-weight:bolder">I love to make things.</h4>
+          <br>
+          <h5 class = "text-center text-white" style = "font-family: Calibri "> As a child, I only had crazy ideas - but no means to make it happen. </h5>
+          <br>
+          <h5 class = "text-center text-white" style = "font-family: Calibri; font-weight:lighter"> Therefore, through my exploration of avenues to create, I decided to double major in Studio Arts and Computer Science.</h5>
+          <br>
+          <h5 class = "text-center text-white" style = "font-family: Calibri; font-weight:bolder"> Since then, I have been actively pushing the intersection of art and technology via focus on user centered products.</h5>
+          <br>
+          <h5 class = "text-center text-white" style = "font-family: Calibri; font-weight:lighter"> I founded <a href = "app.flyerApp.events"> flyerApp.events.</a>  to make events on campus easier to manage for students.</h5>
+          <h5 class = "text-center text-white" style = "font-family: Calibri; font-weight:lighter"> I developed <a href = "spirofy.com"> spirofy.com</a>  to make music something visual for Spotify users</h5>
+          <h5 class = "text-center text-white" style = "font-family: Calibri; font-weight:lighter"> I lead the development of <a href = "finternz.com"> finternz.com</a> to make internships easier to find and apply to. </h5>
+          <br>
+          <h5 class = "text-center text-white" style = "font-family: Calibri; font-weight:bolder"> I am passionate about making a change, and leveraging my skills in software and art to make it happen. </h5>
+          <!-- <br>
+          <p style="font-weight:lighter; font-size:larger ">
+            I am actively seeking roles in <p style = "color: rgba(236, 230, 128, 0.815)"> Full-stack development, front-end development, data visualization, product design, product-management and anything related to developing a product hands-on!</p>
+          </p> -->
         </div>
 
         <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
+          <!-- <div class="col-lg-4" data-aos="fade-right">
             <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Education</h3>
-            <p class="fst-italic">
-              <ul>
-                <li>Carleton College Class of 2023. B.A. Computer Science & Studio Arts</li>
-                <!-- <li>  <em> Computer Sciece <em/>and <em> Studio Arts Major<em/></li> -->
+          </div> -->
+          <!-- <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left"> -->
+            <!-- <h3 class = "text-center text-white"  className = "Education">Education</h3>
+            <p class="fst-italic text-center text-white " style = "font-family: Calibril;" data-aos="fade-left" >
+              <ul class ="text-white text-center">
+                Carleton College Class of 2023. B.A. Computer Science & Studio Arts
               </ul>
-            </p>
+              <ul class = "text-white text-center" style = "font-family: Calibril;">
+                Relevant Courses: Computer Graphics, Computability and Complexity, Data Structures, Algorithms, Software Design, Programming Languages, Computer Systems, Math of CS, Art Interactivity and Robotics
+              </ul>
+            </p> -->
 
-            <h3>Relevant courses</h3>
-            <p class="fst-italic">
-              Computer Graphics, Computability and Complexity, Data Structures, Algorithms, Software Design, Programming Languages, Computer Systems, Math of CS, Art Interactivity and Robotics
-            </p>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
     </section><!-- End About Section -->
@@ -101,7 +120,7 @@
     <p> </p>
 
     <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
+    <!-- <section id="skills" class="skills section-bg">
       <div class="container">
 
         <div class="section-title">
@@ -133,7 +152,7 @@
             </div>
 
             <div class="progress">
-              <span class="skill">Javascript <i class="val">80%</i></span>
+              <span class="skill">Javascript + Typescript<i class="val">80%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -172,7 +191,7 @@
             </div>
 
             <div class="progress">
-              <span class="skill">Groovy <i class="val">30%</i></span>
+              <span class="skill">Ionic Framework <i class="val">30%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -188,8 +207,10 @@
 
           </div>
         </div>
-      </div>
-    </section><!-- End Skills Section -->
+      </div> -->
+      
+    <!-- </section> -->
+    <!-- End Skills Section -->
 
 
     <p> </p>
@@ -199,44 +220,57 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Projects</h2>
+          <h2>Software Projects</h2>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <div class="image_description_div">
-                <h3 class="image_description"> Spotify Webapp
-                </h3>
-              </div>
+            <div class="portfolio-wrap bg-white">
               <div class="specific_description_div">
                 <p>
-                    HTML, CSS, Javascript, SQL, Python
-                  </p>
+                    mySQL, Javascript, HTML, CSS, Python, Figma
+                </p>
               </div>
               <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="http://spotifysearch.app" ><i class="bx bx-link"></i></a>
-                <a href="https://github.com/imaik129/Spotify-Web-App"target="_blank"><i class="bx bxl-github"></i></a>
-              </div>
             </div>
+              <div class="image_description_div" style = "background-color:white; padding:10px ">
+                <h3 class=".image_description" style = "font-size: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding: 5px;"> 
+                  Dynamic Spotify Directory: Search through spotify dataset + create playlists and visualize comparisons as graph.
+                </h3>
+                <h2 style = "font-size: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:small; font-style: lighter; padding:5px">
+                 Dynamics web application building using javascript, HTML, CSS, python, and mySQl</h2>
+                
+                <div class="icon-link text-center">
+                  <!-- <a href="https://www.spirofy.com/" ><i class="bx bx-link"></i></a> -->
+                  <a href="https://github.com/imaik129/Spotify-Web-App"target="_blank"><i class="bx bxl-github"></i></a>
+                  <!-- <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a> -->
+                </div>
+              </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <div class="image_description_div">
-                <h3 class=".image_description"> Spirofy.com
-                </h3>
 
-              </div>
-              <div class="specific_description_div">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web" >
+            <div class="portfolio-wrap bg-white" >
+              <!-- <div class="specific_description_div">
                 <p>
                     HTML, CSS, React/Next.js, p5.js, Recoil, Spotify API
                   </p>
+              </div> -->
+              <div class="specific_description_div">
+                <p>
+                    Next/React.js, p5.js, Typescript, HTML, Tailwind CSS, recoil, middleware, Spotify API, Figma, Data Visualization
+                </p>
               </div>
               <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
+            </div>
+            <div class="image_description_div" style = "background-color: white; padding:10px ">
+              <h3 class=".image_description" style = "font-size: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding: 5px;"> 
+                Spirofy.com: Playlist Visualizer
+              </h3>
+              <h2 style = "font-size: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:small; font-style: lighter; padding:5px">
+               A spotify playlist visualizer built using react/next.js, p5.js, recoil, and the spotify API. You can visualize your playlists as spirographs. The elements of the spirographs are determined by the average characteristics of the playlist (e.g duration, danceability, tempo, energy) </h2>
+              
+              <div class="icon-link text-center">
                 <a href="https://www.spirofy.com/" ><i class="bx bx-link"></i></a>
                 <a href="https://github.com/imaik129/Spirofy"target="_blank"><i class="bx bxl-github"></i></a>
                 <!-- <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a> -->
@@ -245,7 +279,46 @@
           <!-- </a> -->
           </div>
 
+
+
+          
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap bg-white" >
+              <div class="specific_description_div">
+                <p>
+                    C, Tokenizer, Parser, Interpreter
+                </p>
+              </div>
+              <!-- <div class="specific_description_div">
+                <p>
+                    HTML, CSS, React/Next.js, p5.js, Recoil, Spotify API
+                  </p>
+              </div> -->
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            </div>
+            
+            <div class="image_description_div" style = "background-color: white; padding:10px ">
+              <h3 class=".image_description" style = "font-size: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding: 5px;"> 
+                Interpreter for the Scheme in C.
+              </h3>
+              
+              <h2 style = "font-size: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:small; font-style: lighter; padding:5px">
+               A interpreter for the scheme programming language build in C. The program implements a parser, tokenizer and interpreter. 
+              
+               <div class="icon-link text-center">
+                <!-- <a href="https://www.spiry.com/" ><i class="bx bx-link"></i></a> -->
+                <a href="https://github.com/imaik129/Spotify-Mood-Box"target="_blank"><i class="bx bxl-github"></i></a>
+                <!-- <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a> -->
+              </div>
+            </div>
+
+          <!-- </a> -->
+          </div>
+
+    
+
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
                 <div class="image_description_div">
                   <h3 class="image_description"> Interpreter for Scheme in C
@@ -261,8 +334,9 @@
                 <a href="https://github.com/imaik129/Interpreter-for-Scheme"target="_blank"><i class="bx bxl-github"></i></a>
               </div>
             </div>
-          </div>
+          </div> -->
 
+<!-- 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <div class="image_description_div">
@@ -280,22 +354,64 @@
                 <a href="https://github.com/imaik129/Personal-Website"target="_blank"><i class="bx bxl-github"></i></a>
               </div>
             </div>
+          </div> -->
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap bg-white" >
+              <div class="specific_description_div">
+                <p>
+                    HTML, CSS, Javascript, Bootstrap
+                </p>
+              </div>
+              <!-- <div class="specific_description_div">
+                <p>
+                    HTML, CSS, React/Next.js, p5.js, Recoil, Spotify API
+                  </p>
+              </div> -->
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+            </div>
+            
+            <div class="image_description_div" style = "background-color: white; padding:10px ">
+              <h3 class=".image_description" style = "font-size: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding: 5px;"> 
+                Personal Portfolio
+              </h3>
+              
+              <h2 style = "font-size: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:small; font-style: lighter; padding:5px">
+               A portfolio containing relevant software and art projects.
+              <div class="icon-link text-center">
+                <a href="https://kyosukeimai.me/" ><i class="bx bx-link"></i></a>
+                <a href="https://github.com/imaik129/Personal-Website"target="_blank"><i class="bx bxl-github"></i></a>
+                <!-- <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a> -->
+              </div>
+            </div>
+          <!-- </a> -->
           </div>
+
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <div class="image_description_div">
-                <h3 class="image_description"> Finternz
-                </h3>
-              </div>
+              <!-- <div class="image_description_div"> -->
+                <!-- <h3 class="image_description"> Finternz
+                </h3> -->
+              <!-- </div> -->
               <div class="specific_description_div">
                 <p>
-                    HTML, CSS, React/Next.js, Redux, Redis
+                    HTML, Tailwind CSS, React/Next.js, Redux, Redis, Figma
                   </p>
               </div>
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="https://finternz.com/" ><i class="bx bx-link"></i></a>
+              <img src="assets/img/portfolio/portfolio-100.jpg" class="img-fluid" alt="">  
+            </div>
+            <div class="image_description_div" style = "background-color: white; padding:10px ">
+              <h3 class=".image_description" style = "font-size: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding: 5px;"> 
+                Finternz.com: Tech-internship posting website
+              </h3>
+              <h2 style = "font-size: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:small; font-style: lighter; padding:5px">
+               An internship posting website built using react/next.js, redis, redux, Figma, and tailwind CSS in collaboration with a team of developers. The goal was to create a platform for undergrads to find and manage internship postings/applications. </h2>
+              
+              <div class="icon-link text-center">
+                <a href="https://finternz.com" ><i class="bx bx-link"></i></a>
+                <!-- <a href="https://github.com/imaik129/Spirofy"target="_blank"><i class="bx bxl-github"></i></a> -->
                 <!-- <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a> -->
               </div>
             </div>
@@ -303,67 +419,176 @@
 
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <!-- <a href="https://github.com/imaik129/Word-cloud"> -->
-            <div class="portfolio-wrap">
-              <div class="image_description_div">
-                <h3 class="image_description"> Word Cloud Maker
-                </h3>
-              </div>
+            <div class="portfolio-wrap bg-white" >
               <div class="specific_description_div">
                 <p>
                     Java
-                  </p>
+                </p>
               </div>
               <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
+            </div>
+            <div class="image_description_div" style = "background-color: white; padding:10px ">
+              <h3 class=".image_description" style = "font-size: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding: 5px;"> 
+                Word-cloud Generator
+              </h3>
+              
+              <h2 style = "font-size: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:small; font-style: lighter; padding:5px">
+               A project experimenting with algorithms, and converting data into an understandble and accessible visualizatio.
+
+              <div class="icon-link text-center">
+                <!-- <a href="https://www.4" ><i class="bx bx-link"></i></a> -->
                 <a href="https://github.com/imaik129/Word-cloud"target="_blank"><i class="bx bxl-github"></i></a>
-
+                <!-- <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a> -->
               </div>
             </div>
           <!-- </a> -->
           </div>
 
+
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <!-- <a href="https://github.com/imaik129/Word-cloud"> -->
-            <div class="portfolio-wrap">
-              <div class="image_description_div">
-                <h3 class="image_description"> Flyer App
-                </h3>
-              </div>
-              <div class="specific_description_div">
+            <div class="portfolio-wrap bg-white" >
+              <!-- <div class="specific_description_div">
                 <p>
-                    Co-Founder (Web + IOS app)
+                    HTML, CSS, React/Next.js, p5.js, Recoil, Spotify API
                   </p>
-              </div>
+              </div> -->
               <img src="assets/img/portfolio/portfolio-11.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="https://app.flyerapp.events/"target="_blank"><i class="bx bx-link"></i></a>
-
+            </div>
+            <div class="image_description_div" style = "background-color: white; padding:10px ">
+              <h3 class=".image_description" style = "font-size: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding: 5px;"> 
+                flyerApp.events: Your one stop shop for local events.
+              </h3>
+              <h2 style = "font-size: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:small; font-style: lighter; padding:5px">
+               Founder of "Flyer Event" a mobile application built for college students to host,, manage, and explore college events.</h2>
+              
+              <div class="icon-link text-center">
+                <a href="https://app.flyerapp.events" ><i class="bx bx-link"></i></a>
+                <!-- <a href="https://github.com/imaik129/Spirofy"target="_blank"><i class="bx bxl-github"></i></a> -->
+                <!-- <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a> -->
               </div>
             </div>
-          <!-- </a> -->
           </div>
 
+
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <!-- <a href="https://github.com/imaik129/Word-cloud"> -->
-            <div class="portfolio-wrap">
-              <div class="image_description_div">
-                <h3 class="image_description"> Page Rank Implementation
-                </h3>
-              </div>
+            <div class="portfolio-wrap bg-white" >
               <div class="specific_description_div">
                 <p>
                     Python
-                  </p>
+                </p>
               </div>
               <img src="assets/img/portfolio/portfolio-12.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
+            </div>
+            
+            <div class="image_description_div" style = "background-color: white; padding:10px ">
+              <h3 class=".image_description" style = "font-size: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding: 5px;"> 
+                Page Rank Implementation
+              </h3>
+              
+              <h2 style = "font-size: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:small; font-style: lighter; padding:5px">
+               A page rank implementation in Python.
+              <div class="icon-link text-center">
+                <!-- <a href="https://www.spasdfy.com/" ><i class="bx bx-link"></i></a> -->
                 <a href="https://github.com/imaik129/Page-Rank-Implementation"target="_blank"><i class="bx bxl-github"></i></a>
-
+                <!-- <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a> -->
               </div>
             </div>
           <!-- </a> -->
           </div>
+
+     
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap bg-white" >
+              <div class="specific_description_div">
+                <p>
+                    React/Next.js, tailwind CSS, graphQL
+                </p>
+              </div>
+              <img src="assets/img/portfolio/progress.jpg" class="img-fluid" alt="">
+            </div>
+            
+            <div class="image_description_div" style = "background-color: white; padding:10px ">
+              <h3 class=".image_description" style = "font-size: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding: 5px;"> 
+                Ranklist: Request Playlists (in progress)
+              </h3>
+              
+              <h2 style = "font-size: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:small; font-style: lighter; padding:5px">
+               A platform that allows you to request playlists
+              <div class="icon-link text-center">
+                <a href="https://www.ranklist.io/" ><i class="bx bx-link"></i></a>
+                <a href="https://github.com/imaik129/ranklist"target="_blank"><i class="bx bxl-github"></i></a>
+                <!-- <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a> -->
+              </div>
+            </div>
+          <!-- </a> -->
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap bg-white" >
+              <div class="specific_description_div">
+                <p>
+                    Python, Arduino, C
+                </p>
+              </div>
+              <!-- <div class="specific_description_div">
+                <p>
+                    HTML, CSS, React/Next.js, p5.js, Recoil, Spotify API
+                  </p>
+              </div> -->
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            </div>
+            
+            <div class="image_description_div" style = "background-color: white; padding:10px ">
+              <h3 class=".image_description" style = "font-size: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding: 5px;"> 
+                Music Box
+              </h3>
+              
+              <h2 style = "font-size: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:small; font-style: lighter; padding:5px">
+               A music box for my final project for the Robotics, Art, and Interactivity course at Carleton College. Uses Arduino to power 6 different rooms which activate in response to the song that is being played. The data being retrieved of the "currently playing song" from the Spotify API is parsed and used to triggers one or more of the rooms.
+              <div class="icon-link text-center font-size:">
+                <!-- <a href="https://www.2.com/" ><i class="bx bx-link"></i></a> -->
+                <a href="https://github.com/imaik129/Spotify-Mood-Box"target="_blank"><i class="bx bxl-github"></i></a>
+                <!-- <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a> -->
+              </div>
+            </div>
+          <!-- </a> -->
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap bg-white" >
+              <div class="specific_description_div">
+                <p>
+                    React, d3
+                </p>
+              </div>
+              <!-- <div class="specific_description_div">
+                <p>
+                    HTML, CSS, React/Next.js, p5.js, Recoil, Spotify API
+                  </p>
+              </div> -->
+              <img src="assets/img/portfolio/progress.jpg" class="img-fluid" alt="">
+            </div>
+            
+            <div class="image_description_div" style = "background-color: white; padding:10px ">
+              <h3 class=".image_description" style = "font-size: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding: 5px;"> 
+                Data Visualization Project using d3 (in progress)
+              </h3>
+              
+              <h2 style = "font-size: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:small; font-style: lighter; padding:5px">
+               A music box for my final project for the Robotics, Art, and Interactivity course at Carleton College. Uses Arduino to power 6 different rooms which activate in response to the song that is being played. The data being retrieved of the "currently playing song" from the Spotify API is parsed and used to triggers one or more of the rooms.
+              <div class="icon-link text-center">
+                <!-- <a href="https://www.3/" ><i class="bx bx-link"></i></a> -->
+                <a href="https://github.com/imaik129/d3"target="_blank"><i class="bx bxl-github"></i></a>
+                <!-- <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a> -->
+              </div>
+            </div>
+          <!-- </a> -->
+          </div>
+
+
         </div>
 
       </div>
@@ -379,7 +604,7 @@
         <div class="section-title">
           <h2>Art Portfolio</h2>
         </div>
-
+<!-- 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
@@ -447,7 +672,7 @@
               <p>Bronze Bracelet</p>
               <img src="assets/img/portfolioArt/art-9.jpg" class="img-fluid" alt="">
             </div>
-          </div>
+          </div> -->
 
 
         </div>
@@ -466,7 +691,7 @@
         <div class="section-title">
           <h2>Contact </h2>
           <h4> I'd Love To Connect With You!</h4>
-          <p> Reach me at: </p>
+          <p style = "font-family: Calibri; font-weight:lighter"> Reach me at: </p>
           <div class="d-flex flex-column">
           <div class="profile">
             <div class="social-links mt-3 text-center">
