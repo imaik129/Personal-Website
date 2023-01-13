@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Work by Kyosuke Imai</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html#portfolio" class="nav-link scrollto active"><i class="bx bx-left-arrow"></i> <span>Back</span></a></li>
+        </ul>
+      </nav>
+      <!-- .nav-menu -->
+      <div id = "contact1" class="profile">
+        <div class="social-links mt-3 text-center">
+          <a href="https://github.com/imaik129" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/kyosuke-imai-a3358861/"target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.instagram.com/korner.art/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="mailto:imaik@carleton.edu" class="gmail"><i class="bx bx-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </header><!-- End Header -->
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+  <main id="main" >
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" style = "background-color: white;">
+
+        <div class="section-title " >
+          <h2 style = "color: black; padding-top: 2em;" >Dynamic Spotify Directory</h2>
+
+          <h3 style = "color: black; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight:lighter ; ">A Software Design Project.</h3>
+          <br>
+          <div class="icon-link text-center">
+            <a href="https://github.com/imaik129/Spotify-Web-App"target="_blank"><i class="bx bxl-github"></i></a>
+            <!-- <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a> -->
+          </div>
+          <h4 class = "" style = "color: black; text-align:center; font-weight: lighter; font-family: Calibri ; padding: 2em;"> 
+              HTML <img style = "height: 25px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />, 
+              CSS <img style = "width: 25px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />, 
+              Javascript <i class="devicon-javascript-plain"></i>, 
+              Flask <i class="devicon-flask-original"></i>, 
+              Figma <img style = "height: 20px"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />, 
+              Python <img style = "width: 25px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" /> 
+          </h4>
+
+          <h5 class = "color: black" style = "font-family: Calibri ; padding: 2em;"> 
+            I love music! In fact, when I realized that Spotify stored and shared song metrics including but not limited to danceability, tempo, duration, energry, and valence I knew I had to do something with it. 
+            <br> </br>
+            Therefore, I created a interactive music directory that lets users search + sort music using cool metrics, create playlists, and compare these created playlists via the listed metrics. 
+           </h5>
+            
+           <br></br>
+           <img style = "max-width: 100%; padding-left: 2em; padding-right:2em;" src="assets/img/projects/SpotifyDirectory/1.png" class="center img-fluid" alt="">
+           <br> </br>
+
+          <h5 class = "color: black" style = "font-family: Calibri ; padding-right: 2em; padding-left: 2em;"> 
+            In order to develop this directory, I used a Kraggle dataset containg 600k+ Spotify songs and corresponding song data. 
+            We first created a Figma wireframe to design the directory. Then, we used python to pre-process the data file, and load into PostgresSQL. 
+            We devised various sorting algorithms to sort large data sets by the diverse metrics, and we displayed the results used HTML, CSS, and Javascript.
+            For the back-end we utlized Flask to integrate the API to connect to the database, and run the development server. The result was an interactive Spotify
+            music directory that not only allows users to search and sort, but create and compare playlists, and eventually download them as a csv file, which could be 
+            imported into music platforms to convert into a listenable playlist.</h5>
+ 
+
+            <br></br>
+            <img style = "max-width: 100%; padding-left: 2em; padding-right:2em;" src="assets/img/projects/SpotifyDirectory/2.png" class="center img-fluid" alt="">
+            <br> </br>        <div class="row">
+          <!-- <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div> -->
+          <!-- <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left"> -->
+            <!-- <h3 class = "text-center text-white"  className = "Education">Education</h3>
+            <p class="fst-italic text-center text-white " style = "font-family: Calibril;" data-aos="fade-left" >
+              <ul class ="text-white text-center">
+                Carleton College Class of 2023. B.A. Computer Science & Studio Arts
+              </ul>
+              <ul class = "text-white text-center" style = "font-family: Calibril;">
+                Relevant Courses: Computer Graphics, Computability and Complexity, Data Structures, Algorithms, Software Design, Programming Languages, Computer Systems, Math of CS, Art Interactivity and Robotics
+              </ul>
+            </p> -->
+
+          <!-- </div> -->
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+
+
+  </main><!-- End #main -->
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
