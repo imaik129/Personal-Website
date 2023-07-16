@@ -1,13 +1,35 @@
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+.container .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.container .column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.container .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  height: 12em;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
-  background:#000000;
+  /* background: #000000; */
   width: 100%;
-  background: #181818;
+
+  background: linear-gradient( rgba(0, 0, 0, 0.5),
+   rgba(1, 1, 1, 1) ), url("../img/hero-bg.jpg");
+  /* background: url("../img/hero-bg.jpg") top center; */
+  background-size: cover;
   /* position:relative; left:-60px */
 }
 
@@ -21,72 +43,82 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   /* font-family: "Raleway", sans-serif; */
   font-family: "New Century Schoolbook";
 }
 
-.aboutMeButon a{
-  border:#e7f691;
+h5{
+  font-size: 25px;
+}
+.aboutMeButon a {
+  border: #e7f691;
   color: hsl(69, 85%, 77%);
   background-color: rgba(14, 103, 205, 0);
-
 }
-.aboutMeButon{
+.aboutMeButon {
   border: 2px solid rgb(255, 255, 255);
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0);
   padding: 0.5em;
-  
 }
 
-
-button:hover a{
+button:hover a {
   color: white;
 }
 
- button:hover{
-  background: rgb(1, 1, 18);
-  
+button:hover {
+  background: rgb(210, 210, 221);
 }
-
 
 .typewriter h1 {
   color: #fff;
   /* font-family: monospace; */
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid rgb(141, 145, 221); /* The typwriter cursor */
+  border-right: 0.15em solid rgb(141, 145, 221); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end hide;
 }
 
 .typewriter h3 {
   color: #fff;
   /* font-family: monospace; */
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid rgb(141, 145, 221); /* The typwriter cursor */
+  border-right: 0.15em solid rgb(141, 145, 221); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: rgb(209, 234, 21) }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(209, 234, 21);
+  }
+  
 }
 
 /*--------------------------------------------------------------
@@ -140,7 +172,8 @@ button:hover a{
   position: relative;
   white-space: nowrap;
 }
-.nav-menu a, .nav-menu a:focus {
+.nav-menu a,
+.nav-menu a:focus {
   display: flex;
   align-items: center;
   color: #fff;
@@ -149,27 +182,30 @@ button:hover a{
   transition: 0.3s;
   font-size: 15px;
 }
-.nav-menu a i, .nav-menu a:focus i {
+.nav-menu a i,
+.nav-menu a:focus i {
   font-size: 28px;
-  font-weight:500;
+  font-weight: 500;
   padding-right: 9px;
   color: #fff;
 }
 
 /* change color of menu as scroll dowb */
-.nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover > a i {
+.nav-menu a:hover i,
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu li:hover > a i {
   color: #48937e;
 }
 
-
-#contact1 .social-links{
+#contact1 .social-links {
   position: fixed;
   opacity: 1;
   right: 16px;
   bottom: 15px;
   top: 0;
-  right:0;
-  bottom:0 ;
+  right: 0;
+  bottom: 0;
 }
 
 #header .profile .social-links a {
@@ -190,7 +226,7 @@ button:hover a{
 }
 
 #header .social-links a:hover {
-  background: 	#ffa07a;
+  background: #ffa07a;
   background: #48937e;
   color: #fff;
 }
@@ -200,7 +236,7 @@ button:hover a{
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  position:relative;
+  position: relative;
   height: 100vh;
   /* left: 60px; */
   background: url("../img/hero-bg.jpg") top center;
@@ -210,7 +246,7 @@ button:hover a{
 #hero .hero-container {
   position: relative;
   z-index: 2;
-  min-width:  220px;
+  min-width: 220px;
 }
 #hero h1 {
   margin: 0 0 10px 0;
@@ -228,7 +264,7 @@ button:hover a{
   color: #fff;
   opacity: 0.8;
 }
-#hero p{
+#hero p {
   color: #fff;
   opacity: 0.6;
   width: 500px;
@@ -239,7 +275,6 @@ button:hover a{
     background-attachment: fixed;
   }
 }
-
 
 /*--------------------------------------------------------------
 # Sections General
@@ -264,7 +299,7 @@ section {
   padding-bottom: 20px;
   position: relative;
   /* color:#123524; */
-  color: #F8F8F8;
+  color: #f8f8f8;
 }
 .section-title h2::after {
   content: "";
@@ -284,23 +319,24 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about{
-  background: rgb(1, 13, 30);
+.about {
+  /* background: rgb(1, 13, 30); */
+
 }
-.about .section-title h3{
+.about .section-title h3 {
   text-align: center;
   color: #fff;
   font-size: 30px;
 }
-.about .section-title p{
-  text-align: center;
+.about .section-title p {
+  text-align: left;
   padding-right: 50px;
   padding-left: 50px;
   color: #fff;
   opacity: 0.6px;
   font-size: 20px;
 }
-.about .row img{
+.about .row img {
   border-radius: 50%;
   width: 220px;
   padding: 3px;
@@ -311,89 +347,44 @@ section {
   font-weight: 700;
   font-size: 26px;
   /* color: #18453b; */
-  color: #F8F8F8;
+  color: #f8f8f8;
 }
 .about .content p {
-
-  color: #F8F8F8;
-  opacity:0.75;
+  color: #f8f8f8;
+  opacity: 0.75;
 }
 .about .section-title p {
-  color: #F8F8F8;
+  color: #f8f8f8;
   /* opacity:0.75; */
 }
 .about .content ul {
   list-style: none;
   padding: 0px;
-  color:#F8F8F8
+  color: #f8f8f8;
 }
 
 .about .content ul li {
   margin-bottom: 20px;
   display: flex;
-  color: #F8F8F8;
-  opacity:0.75;
+  color: #f8f8f8;
+  opacity: 0.75;
   align-items: center;
 }
 .about .content ul strong {
   margin-right: 10px;
-  color:#F8F8F8;
-  opacity:0.75;
+  color: #f8f8f8;
+  opacity: 0.75;
 }
 
 .about .content p:last-child {
   margin-bottom: 0;
-  color: #F8F8F8;
-  opacity:0.75;
+  color: #f8f8f8;
+  opacity: 0.75;
 }
 
-.Education{
-  background-color:white;
+.Education {
+  background-color: white;
 }
-
-
-/*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
-
-.skills{
-  background:#212431;
-}
-
-.skills .section-title h2{
-  color: #fff
-}
-
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
-}
-.skills .progress .skill {
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #fff;
-}
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-.skills .progress-bar-wrap {
-  background: #dce8f8;
-  height: 10px;
-}
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color:#4682B4;
-}
-
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -401,8 +392,8 @@ section {
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
-.portfolio{
-  background:#000000;
+.portfolio {
+  background: #000000;
 }
 
 .portfolio .portfolio-wrap {
@@ -425,7 +416,6 @@ section {
   opacity: 0;
 }
 
-
 .portfolio .image_description_div .portfolio-links {
   opacity: 1;
   left: 0;
@@ -442,7 +432,7 @@ section {
   color: #fff;
   font-size: 30px;
   text-align: center;
-  background: rgba(27,77,62,0.75);
+  background: rgba(27, 77, 62, 0.75);
   transition: 0.3s;
   width: 50%;
 }
@@ -451,7 +441,7 @@ section {
   font-size: 20px;
   text-align: center;
   position: sticky;
-  background: rgba(27,77,62,0.75);
+  background: rgba(27, 77, 62, 0.75);
   transition: 0.3s;
   width: 100%;
   top: 0;
@@ -477,7 +467,7 @@ section {
   color: #fff;
   font-size: 30px;
   text-align: center;
-  background: rgba(27,77,62,0.75);
+  background: rgba(27, 77, 62, 0.75);
   transition: 0.3s;
   width: 50%;
 }
@@ -486,7 +476,7 @@ section {
   font-size: 20px;
   text-align: center;
   position: sticky;
-  background: rgba(27,77,62,0.75);
+  background: rgba(27, 77, 62, 0.75);
   transition: 0.3s;
   width: 100%;
   top: 0;
@@ -517,8 +507,8 @@ section {
   opacity: 1;
   bottom: 0;
 }
-.portfolio .portfolio-wrap:hover .image_description_div{
-  background:#48937e;
+.portfolio .portfolio-wrap:hover .image_description_div {
+  background: #48937e;
 }
 .portfolio .portfolio-wrap .image_description_div {
   opacity: 0.8;
@@ -529,7 +519,7 @@ section {
   right: 0;
   z-index: 3;
   padding: 2px;
-  background:#48937e;
+  background: #48937e;
   position: absolute;
   transition: all ease-in-out 0.3s;
   display: flex;
@@ -539,13 +529,12 @@ section {
   color: #fff;
   font-size: 28px;
   text-align: center;
-  opacity:1;
+  opacity: 1;
   transition: 0.3s;
 }
 .portfolio .portfolio-wrap:hover .image_description_div {
   opacity: 1;
 }
-
 
 .portfolio .portfolio-wrap .specific_description_div {
   opacity: 0;
@@ -553,7 +542,7 @@ section {
   text-align: center;
   left: 0;
   top: 90px;
-    font-size: 20px;
+  font-size: 20px;
   right: 0;
   z-index: 3;
   padding: 2px;
@@ -561,46 +550,45 @@ section {
   display: flex;
   justify-content: center;
 }
-.portfolio .portfolio-wrap:hover .specific_description_div p{
+.portfolio .portfolio-wrap:hover .specific_description_div p {
   color: #fff;
   font-size: 20px;
   text-align: center;
   font-family: "Times New Roman";
-  opacity:1;
+  opacity: 1;
   transition: 0.1s;
 }
 .portfolio .portfolio-wrap:hover .specific_description_div {
   opacity: 1;
 }
 
-
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
-.portfolio{
-  background:#000000;
+.portfolio {
+  background: #000000;
 }
 
-.icon-link{
+.icon-link {
   margin-top: 20px;
   /* background:rgba(205, 203, 227, 0.39); */
 }
 
-.icon-link a{
- /* background: rgb(0, 0, 0); */
- border: black 2px;
- background:rgba(255, 255, 255, 0.507);
- font-size: 30px;
- padding: 3px; 
+.icon-link a {
+  /* background: rgb(0, 0, 0); */
+  border: black 2px;
+  background: rgba(255, 255, 255, 0.507);
+  font-size: 30px;
+  padding: 3px;
 }
 /*--------------------------------------------------------------
 # Art Portfolio
 --------------------------------------------------------------*/
-.art-portfolio{
+.art-portfolio {
   background: #000000;
 }
-.art-portfolio .container .section-title h2{
-  color: #fff
+.art-portfolio .container .section-title h2 {
+  color: #fff;
 }
 
 .art-portfolio .portfolio-wrap p {
@@ -608,15 +596,14 @@ section {
   font-size: 30px;
   font-family: "Open Sans", sans-serif;
   text-align: center;
-  background:#48937e;
+  background: #48937e;
 }
-
 
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 
-#contact{
+#contact {
   background: #212431;
 }
 #contact .section-title .profile .social-links a {
@@ -638,12 +625,12 @@ section {
   color: #fff;
   text-decoration: none;
 }
-#contact h4{
-  color: #7FFFD4;
+#contact h4 {
+  color: #7fffd4;
   text-align: center;
   font-size: 50px;
 }
-#contact p{
+#contact p {
   color: #fff;
   text-align: center;
   font-size: 30px;

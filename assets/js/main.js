@@ -30,6 +30,7 @@
       } else {
         selectEl.addEventListener(type, listener)
       }
+
     }
   }
 
