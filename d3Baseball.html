@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Work by Kyosuke Imai</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html#portfolio" class="nav-link scrollto active"><i class="bx bx-left-arrow"></i> <span>Back</span></a></li>
+        </ul>
+      </nav>
+      <!-- .nav-menu -->
+      <div id = "contact1" class="profile">
+        <div class="social-links mt-3 text-center">
+          <a href="https://github.com/imaik129" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/kyosuke-imai-a3358861/"target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.instagram.com/korner.art/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="mailto:imaik@carleton.edu" class="gmail"><i class="bx bx-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </header><!-- End Header -->
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+  <main id="main" >
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" style = "background-color: white;">
+
+        <div class="section-title " >
+          <h2 style = "color: black; padding-top: 2em;" > <a href = "https://finternz.com" style = "color:black">  Data Visualization: The Evolution of Baseball </a></h2>
+
+          <h3 style = "color: black; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight:lighter ; ">Software Engineer</h3>
+          <br>
+              
+          <div class="icon-link text-center">
+            <a href="https://www.Finternz.com/" ><i class="bx bx-link"></i></a>
+            <!-- <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a> -->
+          </div>
+          
+          <h4 class = "" style = "color: black; text-align:center; font-weight: lighter; font-family: Calibri ; padding: 2em;"> 
+            HTML <img style = "height: 25px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" /></i>, 
+            d3.js <img style = "height: 25px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d3js/d3js-original.svg" />, 
+            Observable, 
+        </h4>
+
+           <br></br>
+          <h5 class = "color: black" style = "font-family: Calibri ; padding-right: 2em; padding-left: 2em;"> 
+            <em> The Question: </em>
+
+            We want to find out how exactly Major League Baseball has changed over the extensive history of the game. Our sliding timescale over four graphics allows the viewer to see various short and long term trends in the league. This will give viewers a window into the correlations between each team's historical reliance on different stats and measures, and if less performance-related details such as game attendance have any influence on game outcomes. We also included turning points in league history to see how or if major events in the league affected individual team performance. Interactivity also affords users the ability to quickly answer these questions, and explore metrics both across teams as well as within one team over time.
+            
+            Additionally, modern analytics that use a formula to calculate data points, colloquially referred to as "sabermetrics", can be found in the graphic. An example would be the three true outcomes percentage, a single number calculated using home runs, strikeouts, walks, as a percentage of total plate appearances.
+          </h5>
+          <br></br>
+          <h5 class = "color: black" style = "font-family: Calibri ; padding: 2em;"> 
+            <em> The Data: </em>
+            The data we are using is from <a href = "openintro.org"> openintro.org </a> 
+            . It is an expansive dataset of individual team data starting from 1880 all the way to the 2020 MLB season 
+            — we manually added data from the past two years using <a href = "openintro.org">baseball-reference.com </a>, both datasets being made 
+            intentionally public by the league. Each row of our CSV is one team’s stats for a single seasons, with 41 distinct 
+            variables including team name, attendance, year, record, and performance statistics such as home runs, walks, etc. 
+            Using this data, we also calculate other modern statistical metrics to answer specific questions about the evolution 
+            of baseball. The reason we used this data, and the main intrigue behind our transforming it into an interactive graphic,
+             is because of its expansive size (around 2800 data points) over a century, which documents both the historic era of 
+             baseball and the modern iteration of the game. And the information is already well organized. Note: We adapted team 
+             names from the early 1900s to their modern names for ease of understanding in a contemporary setting.
+           </h5>
+          
+          <img style = "max-width: 100%; padding-left: 2em; padding-right:2em;" src="assets/img/projects/d3MLB/table.gif" class="center img-fluid" alt="">
+          <h5 class = "color: black" style = "font-family: Calibri ; padding-right: 2em; padding-left: 2em;"> 
+          <br></br>
+            <h5 class = "color: black" style = "font-family: Calibri ; padding-right: 2em; padding-left: 2em;"> 
+                <em> Design Justification: </em>
+
+                Our design includes 4 different charts for 4 ways to aggregate the swathes of evolutionary baseball data. We decided to group these particular ones together because of their unique components that within one graph would become too messy. Baseball is a game too complicated for just one timeline with thirty teams in the modern day. So we first use scatterplots showing individual team performance, the first one is color encoded by team-name and the other is has color encodings based on divisional ranks, in order to show how wins/losses can be affected by a team's metrics, the stats organized in a dropdown menu. If users don't care about rank, they can simply isolate one or more teams and compare them to all other teams in the first plot diagram.
+                The third chart is a regression graph measuring the same advanced statistics against winning percentages. We wanted to show how tightly-correlated different stats were with both team winning percentage and Pythagorean winning percentage (the latter being an expected winning percentage based on peripheral factors instead of just success in high variance games). The regression line's main visual channel is orientation, meaning the higher the slope, the bigger the correlation. You can use the year slider to see how this slope changes over time. We decided to include the slider because of multiple suggestions that using a slider to actually watch evolution manually would be very helpful and informative.    
+                The last graph we included has all basic statistics over time, with the ability to include markers for when different major events happened in league history, and see the direct and long term effects. This graph shows the most about how the game has changed over the last 150 years where you can see the evolution all at once by just highlighting a line.
+          </h5>
+          <img style = "max-width: 100%; padding-left: 2em; padding-right:2em;" src="assets/img/projects/d3MLB/graphOne.gif" class="center img-fluid" alt="">
+        <br></br>
+        <img style = "max-width: 100%; padding-left: 2em; padding-right:2em;" src="assets/img/projects/d3MLB/graphTwo.gif" class="center img-fluid" alt="">
+        </h5>
+
+      <br></br>
+      <h5 class = "color: black" style = "font-family: Calibri ; padding-right: 2em; padding-left: 2em;"> 
+        <em> Discussion Takeaways: </em>
+
+        The main goal is for less informed users to have the option to simply learn general trends as they hop from chart to chart, and for more avid fans to draw more complex conclusions using relationships between one or more graphs. For both parties, the timeline is an easy place to start. Some major events seem to directly cause a few metrics to change, like modern substitutions being allowed and the beginning/ending of the steroids era, but others seem to mildly exacerbate other existing trends.
+
+        Key takeaways from the three other graphs are which advanced stats do matter for winning percentage and which stats really do not seem to. Statistics, like runs created and fielding independent pitching, which measured the sum of the teams total offense or pitching contribution, were highly correlated with teams winning and their pythagorean winning percentage. Unfortunately, statistics like three true outcome percentage were not at all correlated with winning percentage, which is curious because these statistics have some explanatory power over stats like runs created.
+        
+        Also, it seems fans do not care if their team is any good as our regression line might actually have the worst correlation I've ever seen when attempting to tie home attendance to winning percentage — this is probably because we do not account for the price of the tickets which are probably an equally if not larger determining factor when explaining team attendance.
+
+        On another note, the we can see a strong correlation between new leagure regulations and rules, and it's affect on various baseball metrics.
+        </h5>
+
+        <div class="row">
+          <!-- <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div> -->
+          <!-- <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left"> -->
+            <!-- <h3 class = "text-center text-white"  className = "Education">Education</h3>
+            <p class="fst-italic text-center text-white " style = "font-family: Calibril;" data-aos="fade-left" >
+              <ul class ="text-white text-center">
+                Carleton College Class of 2023. B.A. Computer Science & Studio Arts
+              </ul>
+              <ul class = "text-white text-center" style = "font-family: Calibril;">
+                Relevant Courses: Computer Graphics, Computability and Complexity, Data Structures, Algorithms, Software Design, Programming Languages, Computer Systems, Math of CS, Art Interactivity and Robotics
+              </ul>
+            </p> -->
+
+          <!-- </div> -->
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+
+
+  </main><!-- End #main -->
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
